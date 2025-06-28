@@ -38,3 +38,20 @@ section {
   border: none;
   border-radius: 4px;
 }
+
+/* Positionne le header en relative pour que le logo puisse être positionné absolument */
+header {
+  position: relative;
+  padding: 20px; /* Ajuste l'espace autour selon tes besoins */
+  background: #FFD700; /* Garde ton fond doré */
+}
+
+/* Positionne le logo en haut à gauche */
+header img {
+  position: absolute;
+  top: 10px;   /* Décalage depuis le haut du header */
+  left: 10px;  /* Décalage depuis la gauche du header */
+  max-height: 50px; /* Hauteur maximale du logo */
+  width: auto;
+}
+
