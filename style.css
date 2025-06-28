@@ -1,15 +1,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #ffffff;
-  color: #333333;
+  background: #000000;
+  color: #FFD700;
   margin: 0;
   padding: 0;
 }
 header {
   text-align: center;
   padding: 40px;
-  background: #1E90FF;
-  color: white;
+  background: #FFD700;
+  color: #000000;
 }
 main {
   padding: 60px 20px;
@@ -20,20 +20,22 @@ section {
   text-align: center;
 }
 .generator-box {
-  background: #f5f5f5;
+  background: #111111;
   padding: 20px;
   border-radius: 4px;
 }
 .generator-box div {
   font-size: 1.2em;
   margin-bottom: 10px;
+  color: #FFD700;
 }
 .generator-box button {
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
-  background: #1E90FF;
-  color: #ffffff;
+  background: #FFD700;
+  color: #000000;
   border: none;
   border-radius: 4px;
 }
+
