@@ -51,7 +51,7 @@ header img {
   position: absolute;
   top: 10px;   /* Décalage depuis le haut du header */
   left: 10px;  /* Décalage depuis la gauche du header */
-  max-height: 50px; /* Hauteur maximale du logo */
+  max-height: 100px; /* Hauteur maximale du logo */
   width: auto;
 }
 
