@@ -115,4 +115,33 @@ main > .lang-en section {
   padding: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
+/* Box IA similaire aux générateurs */
+.ai-box {
+  background: #111111;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  color: #FFD700;
+}
+.ai-box h2, .ai-box h3 {
+  color: #FFD700;
+}
+.ai-box textarea {
+  background: #000;
+  color: #FFD700;
+  border: 1px solid #333;
+}
+.ai-box button {
+  background: #FFD700;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ai-box button:hover {
+  opacity: 0.9;
+}
 
