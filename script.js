@@ -47,3 +47,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set default language
   switchLang('fr');
 });
+// Fonction d’appel à l’API AI
+async function analyseTexte(text) {
+  const res = await fetch('https://TON-DOMAIN.netlify.app/.netlify/functions/analyse', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text })
+  });
+  const data = await res.json();
+  return data.result;  // { result: "Ton analyse..." }
+}
+
+document.getElementById('ia-btn').addEventListener('click', async () => {
+  const input = document.getElementById('ia-input').value.trim();
+  const out   = document.getElementById('ia-result');
+  if (!input) { out.textContent = 'Merci de coller un texte.'; return; }
+  out.textContent = 'Analyse en cours…';
+  try {
+    const summary = await analyseTexte(input);
+    out.textContent = summary;
+  } catch (e) {
+    out.textContent = 'Erreur lors de l’analyse.';
+    console.error(e);
+  }
+});
+
