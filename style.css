@@ -97,4 +97,22 @@ header {
   background: #000;
   color: #FFD700;
 }
+/* Boxes ombrées pour chaque section de générateur */
+main > .lang-fr section,
+main > .lang-en section {
+  background: #111111;            /* Fond sombre */
+  border-radius: 8px;            /* Bords arrondis */
+  padding: 20px;                 /* Intérieur de la box */
+  margin: 20px auto;             /* Espacement vertical et centrage */
+  max-width: 600px;              /* Largeur fixe */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);  /* Ombre portée */
+}
+
+/* Si tu veux cibler uniquement la .generator-box à l’intérieur */
+.generator-box {
+  background: inherit;           /* Hérite du fond de la section */
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
 
