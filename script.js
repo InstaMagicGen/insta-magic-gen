@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // Fonction d’appel à l’API AI
 async function analyseTexte(text) {
-  const res = await fetch('https://TON-DOMAIN.netlify.app/.netlify/functions/analyse', {
+  const res = await fetch('https://instamagicgen.netlify.app/.netlify/functions/analyse', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ text })
